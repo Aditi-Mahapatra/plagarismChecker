@@ -3,13 +3,24 @@
 <head>
     <title>Plagiarism Checker</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <script>
+        function validateForm() {
+            var choice = document.getElementById("choice").value;
+            if (choice === "0") {
+                alert("Please select an option");
+                return false;
+            }
+            return true;
+        }
+    </script>
 </head>
 <body>
     <div class="container">
         <h1>Welcome to Plagiarism Checker</h1>
-        <form action="/result" method="post">
+        <form action="/result" method="post" onsubmit="return validateForm()">
             <label for="choice">Select an option:</label><br>
             <select name="choice" id="choice">
+                <option value="0">Select...</option>
                 <option value="1">Folder comparison with master file</option>
                 <option value="2">Check plagiarism in two files</option>
                 <option value="3">Check plagiarism in all files in a folder</option>
@@ -19,3 +30,4 @@
     </div>
 </body>
 </html>
+
