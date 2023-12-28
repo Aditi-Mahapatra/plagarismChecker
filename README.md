@@ -1,13 +1,13 @@
 # plagarismChecker
-Overview
+# Overview
 The Plagiarism Checker is a Python-based web application built with Flask that offers functionalities to detect plagiarism between text documents. This tool allows users to compare text files, folders containing multiple files, or individual files against a master file, presenting similarity percentages based on the Levenshtein distance algorithm.
 
-Features
+# Features
 Folder Comparison: Compare all files within a folder against a specified master file.
 Pairwise Comparison: Check for plagiarism between two individual files.
 Plagiarism Detection: Utilizes the Levenshtein distance algorithm to calculate similarity percentages.
 User-friendly Interface: Web-based interface for easy interaction.
-Installation
+# Installation
 Clone the repository:
 
 bash
